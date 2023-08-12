@@ -88,42 +88,50 @@
 <!--    <link href="./temp_files/signin.css" rel="stylesheet">-->
   </head>
 <
+  <body>
+  <nav class="navbar navbar-expand-md navbar-info fixed-top bg-primary">
+  <div class="container-fluid">
 
-  <body class="text-center">
 
-<main class="form-signin w-100 m-auto">
-  <form method="post">
-    <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
 
-    <div class="form-floating">
-      <input type="text" name="email" class="form-control" id="email" placeholder="name@example.com">
-      <label for="email">Email</label>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Личный кабинет</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Список пользователей</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled"></a>
+        </li>
+      </ul>
+
+
+        <button class="btn btn-light" type="submit" onclick="document.location='/about';" >Выйти из учетной записи</button>
+
     </div>
-    <div class="form-floating">
-      <input type="text" name="password" class="form-control" id="password" placeholder="Password">
-      <label for="password">Пароль</label>
-    </div>
-      <div class="form-floating">
-      <input type="text" name="name" class="form-control" id="name" placeholder="Name">
-      <label for="name">Имя</label>
-    </div>
-      <div class="form-floating">
-      <input type="number" name="age" class="form-control" id="age" placeholder="Age">
-      <label for="age">Возраст</label>
-    </div>
-    <label>
+  </div>
+</nav>
+  </body>
+  <body class="text-center" >
 
-    </label>
-
-      <label>
-
-    </label>
-      <button class="w-100 btn btn-lg btn-primary" type="submit"> <!--onclick="document.location='/v_LK';"-->Зарегистрироваться</button>
+<main class="form-signin w-100 h-100 m-auto" style = "background-color:red; display: block;">
+  <form >
+    <h1 class="h3 mb-3 fw-normal">Личный кабинет</h1>
       <br></br>
-      <a href="/enter" class="link-secondary" >Есть учетная запись?</a>
-    <button class="w-100 btn btn-light" type="submit" onclick="document.location='/about';" >Назад</button>
+    <h1 class="h3 mb-3 fw-normal">Email</h1>
+      <label></label>
+    <h1 class="h3 mb-3 fw-normal">Имя</h1>
+      <label></label>
+      <h1 class="h3 mb-3 fw-normal">Возраст</h1>
+      <label></label>
+      <h1 class="h3 mb-3 fw-normal">Админ или нет</h1>
 
-  </form>
+
+
+</form>
+
 
 
 </main>
