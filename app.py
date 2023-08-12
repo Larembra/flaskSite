@@ -46,10 +46,15 @@ def registration():
     else:
         return render_template("temp.html")
 
+
 @app.route("/v_LK")
 def v_LK():
     return render_template("v_LK.html")
 
+@app.route("/spisok")
+def spisok():
+    user = User.query.order_by(User.userName).all()
+    return render_template("spisok.html", user=user)
 
 @app.route("/user/<string:name>/<int:id>")
 def user(name, id):

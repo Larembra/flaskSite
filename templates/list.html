@@ -87,7 +87,7 @@
     <!-- Custom styles for this template -->
 <!--    <link href="./temp_files/signin.css" rel="stylesheet">-->
   </head>
-<
+
   <body>
   <nav class="navbar navbar-expand-md navbar-info fixed-top bg-primary">
   <div class="container-fluid">
@@ -114,31 +114,15 @@
   </div>
 </nav>
   </body>
+
   <body class="text-center" >
 
 <main class="form-signin w-100 h-100 m-auto" style = "background-color:red; display: block;">
-  <form >
-    <h1 class="h3 mb-3 fw-normal">Личный кабинет</h1>
-      <br></br>
-    <h1 class="h3 mb-3 fw-normal">Email</h1>
-      <label></label>
-    <h1 class="h3 mb-3 fw-normal">Имя</h1>
-      <label></label>
-      <h1 class="h3 mb-3 fw-normal">Возраст</h1>
-      <label></label>
-      <h1 class="h3 mb-3 fw-normal">Админ или нет</h1>
-
-
-
-</form>
+ {% block body %}{% endblock %}
 
 
 
 </main>
-
-
-
-
 
 </body>
 
